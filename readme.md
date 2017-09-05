@@ -45,3 +45,11 @@ bundle install
 ```bash
 bundle exec cucumber
 ```
+
+### Writing Tests
+
+[Cucumber Docs](https://cucumber.io/docs/reference)
+
+[Capybara Cheat Sheet](https://gist.github.com/zhengjia/428105)
+
+[Rspec Docs](http://rspec.info/documentation/3.6/rspec-expectations/#label-Identity)
