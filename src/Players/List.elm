@@ -41,7 +41,7 @@ maybeList response =
 list : List Player -> Html Msg
 list players =
     div [ class "p2" ]
-        [ table []
+        [ table [ class "main-table" ]
             [ thead []
                 [ tr []
                     [ th [] [ text "Id" ]
