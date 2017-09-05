@@ -4,7 +4,7 @@ Given(/^I visit the homepage$/) do
   visit "/"
 end
 
-Then(/^I should see "([^"]*)"$/) do |title|
+Then(/^I should see "([^"]*)" in the header$/) do |title|
   expect(page).to have_content(title)
 end
 
