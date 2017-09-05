@@ -58,9 +58,9 @@ list players =
 playerRow : Player -> Html Msg
 playerRow player =
     tr []
-        [ td [] [ text player.id ]
-        , td [] [ text player.name ]
-        , td [] [ text (toString player.level) ]
+        [ td [ class player.id ] [ text player.id ]
+        , td [ class player.id ] [ text player.name ]
+        , td [ class player.id ] [ text (toString player.level) ]
         , td []
             [ editBtn player ]
         ]
