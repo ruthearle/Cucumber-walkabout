@@ -23,3 +23,25 @@ yarn start
 ```
 
 Open `http://localhost:3000`
+
+## Running Cucumber Tests
+
+##### Ensure you have the following installed:
+
+`ruby` - needed to run Capybara and Rspec
+
+`gem install cucumber` - to initialise cucumber test suite
+
+`gem install nokogiri` - (parses html/xml) Capybara dependancy
+
+`brew install selenium-server-standalone` - to run the headless browser
+
+##### Install gems
+```bash
+bundle install
+```
+
+##### To run the tests:
+```bash
+bundle exec cucumber
+```
