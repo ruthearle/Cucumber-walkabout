@@ -1,14 +1,10 @@
 Then(/^I should see the following list of players:$/) do |table|
 
-  headers = table.transpose.headers
-  p headers.shift
-  p headers
   data = table.rows
 
-  headers.each do | header |
-    data.each do | item |
-    p header
-    expect(find(:css, "td.#{header.to_str}").text).to be(item)
-    end
+  data.each do | item |
+    expect(find(:css, "td.id-#{item[0]}").text).to eql(item[0])
+    expect(find(:css, "td.name-#{item[0]}").text).to eql(item[1])
+    expect(find(:css, "td.level-#{item[0]}").text).to eql(item[2])
   end
 end
